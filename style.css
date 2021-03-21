@@ -1,0 +1,87 @@
+html, body { 
+    --color-1: #b1a7a6;
+    --color-2: #d3d3d3; 
+    --color-3: #e5383b; 
+    --color-4: #a4161a; 
+    --color-5: #e5383b;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding-top: 30px;
+    background-image: linear-gradient(135deg, var(--color-1) , var(--color-2));
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    color: rgb(22, 26, 29);
+}
+
+p {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.container {
+    width: 400px;
+    text-align: center;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: -2px 6px 18px 3px rgba(22,26,29,0.75);
+    padding: 40px;
+    border-radius: 15px;
+}
+
+.players {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.dice {
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+    background-color: var(--color-3);
+    margin: 0 auto;
+    font-size: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    color: #fff;
+    padding: 20px 30px;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 40px auto;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#rollBtn {
+    background-color: var(--color-3);
+    margin: 40px auto 0;
+}
+
+#resetBtn {
+    background-color: var(--color-4);
+}
+
+#gambleBtn {
+    background-color: var(--color-3);
+    margin: 40px auto 10px;
+}
+
+button:focus {
+    outline: none;
+}
+
+#resetBtn {
+    display: none;
+}
+
+.active {
+    box-shadow: -2px 6px 18px 3px rgba(0,0,0,0.75);
+}
